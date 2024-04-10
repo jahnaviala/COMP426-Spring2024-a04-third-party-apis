@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  background-color: #f5e7ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.title-box {
+  background-color: #ea5681;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.content-boxes {
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+  width: 1250px;
+}
+
+.content-box {
+  flex: 1;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input-group>input,
+.input-group>select {
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+select {
+  padding: 10px 20px;
+}
+
+#languageSelect,
+#languageSelect option {
+  font-family: 'Poppins';
+  color: #333;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 30%;
+}
+
+#translateInput {
+  flex-grow: 2;
+  flex-shrink: 0;
+  flex-basis: 60%;
+}
+
+button {
+  background-color: #ea5681;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+#dictionaryResult,
+#translationResult {
+  background-color: #f5e7ec;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  height: 250px;
+}
+
+h3 {
+  color: #ea5681;
+  margin-bottom: 15px;
+}
+
+h3::first-letter {
+  text-transform: capitalize;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#synonyms {
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.synonym {
+  display: inline-block;
+  background-color: #982d4b;
+  color: white;
+  border-radius: 3px;
+  padding: 3px 8px;
+  margin: 5px 5px 5px 0;
+  font-size: 0.8em;
+}
